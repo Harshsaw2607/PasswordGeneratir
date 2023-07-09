@@ -1,0 +1,196 @@
+body{
+    background: #333;
+    color: white;
+    min-height: 100vh;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui;
+
+}
+
+.container{
+    background: #006699;
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container1{
+    /* background: #006699; */
+    padding: 3rem;
+    /* border-radius: 1rem; */
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input{
+    border:none;
+    padding:10px;
+    border-radius: 1rem;
+    margin: 0px;
+    text-align: center;
+}
+
+label::after{
+    content: "*";
+    color: rgb(255, 70, 70);
+}
+
+.DisplayForm{
+    display: none;
+    
+}
+
+.Expansion{
+    /* grid-column: span 2; */
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+    margin-bottom: 20px;
+    
+}
+
+.Collapse{
+    display: none;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+    margin-bottom: 20px;
+}
+
+.Expansion:hover{
+    background: #FFFFFF33;
+}
+
+.Collapse:hover{
+    background: #FFFFFF33;
+}
+
+.ExpandForDecryption{
+    margin-bottom: -60px;
+}
+
+.title{
+    margin: 0px;
+    text-align: center;
+}
+
+label{
+    font-weight: bold;
+}
+
+.character-amount-container{
+    display: flex;
+    align-items: center;
+}
+
+.number-input{
+    width: 2rem;
+}
+
+/* .DispalyPassword{
+    display: flex;
+
+} */
+
+.password-input{
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border: 1px solid #333;
+    min-height: 2rem;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+    border-radius: 0.5rem;
+    /* overflow-wrap: break-word; */
+    /* overflow-y: scroll;
+    overflow-x:hidden; */
+    /* white-space: pre-wrap;*/
+    margin-bottom: 40px;
+    margin-top: 30px;
+    scrollbar-width: thin;
+    scrollbar-color: #999999 #f5f5f5; 
+   
+    
+}
+
+/* .password-input::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .password-input::-webkit-scrollbar-thumb {
+    background-color: #999999;
+    border-radius: 4px;
+  }
+  
+  .password-input::-webkit-scrollbar-thumb:hover {
+    background-color: #777777;
+  }
+  
+  .password-input::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+  } */
+
+.password-output{
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border: 1px solid #333;
+    min-height: 2rem;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+    border-radius: 0.5rem;;
+}
+.Decrypt-Box{
+    display: none;
+}
+
+.btn{
+    grid-column: span 2;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.btn:hover{
+    background: #FFFFFF33;
+}

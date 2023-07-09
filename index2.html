@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Password Generator</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="title">Password Generator</h1>
+    <div class="password-input"></div>
+    <form action="" class="form" id="passwordGeneratorForm">
+            <label for="UserInput" id="Password-Section">Password</label>
+            <div class="character-amount-container">
+           <input type="text"  id="UserInput" placeholder="Enter your Password" required autocomplete="off">
+           </div>
+           
+            <label for="SecretKey">Secret Key</label>
+           <input type="text" id="SecretKey" placeholder="Enter your Secret key" required  autocomplete="off">
+        
+           
+       
+           <button type="submit" class="btn Encrypt">Encrypt Password</button>
+
+    </form>
+
+    
+
+</div>
+    
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.9.1/forge.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/aes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sjcl/1.0.8/sjcl.min.js" integrity="sha512-s0r9TyYSs5CusSDL5s/QEZQZ4DNYLDXx0S+imS+SHR9mw0Yd0Z5KNS9dw7levSp7GpjOZu/bndds3FEDrKd8dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="client2.js"></script>
+</body>
+</html>
